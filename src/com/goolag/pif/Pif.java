@@ -45,6 +45,9 @@ public class Pif extends PreferenceFragmentCompat
         String selectedArrayName = Settings.System.getString(
                 getContext().getContentResolver(), Settings.System.PPU_SPOOF_BUILD_GMS_ARRAY);
 
+	if (selectedArrayName == null) {
+	    selectedArrayName = "device_1"; // Assign a default value
+	}
         int selectedArrayResId = getResources().getIdentifier(selectedArrayName, "array", getContext().getPackageName());
 
         String[] selectedDeviceProps = getResources().getStringArray(selectedArrayResId);
