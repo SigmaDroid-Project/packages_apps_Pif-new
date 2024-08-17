@@ -12,19 +12,19 @@
 
     <!-- Device 1 -->
     <string-array name="device_1" translatable="false">
-        <item></item> <!-- MANUFACTURER -->
-        <item></item> <!-- MODEL -->
-        <item></item> <!-- FINGERPRINT -->
-        <item></item> <!-- BRAND -->
-        <item></item> <!-- PRODUCT -->
-        <item></item> <!-- DEVICE -->
-        <item></item> <!-- RELEASE -->
-        <item></item> <!-- ID -->
-        <item></item> <!-- INCREMENTAL -->
-        <item></item> <!-- TYPE -->
-        <item></item> <!-- TAGS -->
-        <item></item> <!-- SECURITY_PATCH -->
-        <item></item> <!-- DEVICE_INITIAL_SDK_INT -->
+        <item>Google</item> <!-- MANUFACTURER -->
+        <item>Pixel 8a</item> <!-- MODEL -->
+        <item>google/akita_beta/akita:15/AP31.240617.015/12207491:user/release-keys</item> <!-- FINGERPRINT -->
+        <item>google</item> <!-- BRAND -->
+        <item>akita_beta</item> <!-- PRODUCT -->
+        <item>akita</item> <!-- DEVICE -->
+        <item>15</item> <!-- RELEASE -->
+        <item>AP31.240617.015</item> <!-- ID -->
+        <item>12207491</item> <!-- INCREMENTAL -->
+        <item>user</item> <!-- TYPE -->
+        <item>release-keys</item> <!-- TAGS -->
+        <item>2024-08-05</item> <!-- SECURITY_PATCH -->
+        <item>21</item> <!-- DEVICE_INITIAL_SDK_INT -->
     </string-array>
 
 </resources>
