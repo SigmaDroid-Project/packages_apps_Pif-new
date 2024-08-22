@@ -4,12 +4,15 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 
+          <!-- android:sharedUserId="android.uid.shared" -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          android:sharedUserId="android.uid.system"
           package="com.goolag.pif"
           android:versionCode="2"
           android:versionName="2.0" >
+
+    <permission android:name="com.goolag.pif.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="normal" tools:replace="android:protectionLevel"/>
 
     <application
         android:label="@string/app_name"

@@ -11,13 +11,13 @@ import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 public class PifActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG = "PifActivity";
+    private static final String TAG = "Pif";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new Pif(), TAG).commit();
     }
 }

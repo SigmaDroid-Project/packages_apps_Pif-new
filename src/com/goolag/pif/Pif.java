@@ -14,7 +14,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 
-import com.android.internal.util.alpha.PixelPropsUtils;
+import com.android.internal.util.crdroid.PixelPropsUtils;
 import com.android.settingslib.widget.TopIntroPreference;
 
 import com.goolag.pif.R;
