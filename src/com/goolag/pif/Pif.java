@@ -42,12 +42,12 @@ public class Pif extends PreferenceFragmentCompat
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.main, rootKey);
 
-        String selectedArrayName = Settings.System.getString(
-                getContext().getContentResolver(), Settings.System.PPU_SPOOF_BUILD_GMS_ARRAY);
+        // String selectedArrayName = Settings.System.getString(
+        //         getContext().getContentResolver(), Settings.System.PPU_SPOOF_BUILD_GMS_ARRAY);
 
-	if (selectedArrayName == null) {
-	    selectedArrayName = "device_1"; // Assign a default value
-	}
+	// if (selectedArrayName == null) {
+	    String selectedArrayName = "device_1"; // Assign a default value
+	// }
         int selectedArrayResId = getResources().getIdentifier(selectedArrayName, "array", getContext().getPackageName());
 
         String[] selectedDeviceProps = getResources().getStringArray(selectedArrayResId);
@@ -75,11 +75,9 @@ public class Pif extends PreferenceFragmentCompat
         mFingerprintPreference.setSummary(selectedDeviceProps[2]);
         mBrandPreference.setSummary(selectedDeviceProps[3]);
         mProductPreference.setSummary(selectedDeviceProps[4]);
-        mDevicePreference.setSummary(selectedDeviceProps[5].isEmpty() ?
-                PixelPropsUtils.getDeviceName(selectedDeviceProps[2]) : selectedDeviceProps[5]);
+        mDevicePreference.setSummary(selectedDeviceProps[5]);
         mReleasePreference.setSummary(selectedDeviceProps[6]);
-        mIDPreference.setSummary(selectedDeviceProps[7].isEmpty() ?
-                PixelPropsUtils.getBuildID(selectedDeviceProps[5]) : selectedDeviceProps[7]);
+        mIDPreference.setSummary(selectedDeviceProps[7]);
         mIncrementalPreference.setSummary(selectedDeviceProps[8]);
         mTypePreference.setSummary(selectedDeviceProps[9].isEmpty() ? "user" : selectedDeviceProps[9]);
         mTAGSPreference.setSummary(selectedDeviceProps[10].isEmpty() ? "release-keys" : selectedDeviceProps[10]);
